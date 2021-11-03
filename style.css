@@ -72,6 +72,7 @@ header {
 .menu {
     display: flex;
     justify-content: space-around;
+    background-color: darksalmon;
 }
 
 
@@ -100,3 +101,11 @@ header {
     justify-content: center;
     flex-direction: column-reverse;
 }
+
+nav {
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
