@@ -329,9 +329,18 @@ footer {
 
 }
 
-.footer-content {
-    
+.footer .footer-content {
+    border: 1px solid red;
+    height: 400px;
+    display: flex;
+
 }
+
+.footer .footer-content .footer-section {
+    border: 1px solid white;
+    flex: 1;
+}
+
 
 .footer .footer-bottom {
     background: rgb(100, 6, 6);
