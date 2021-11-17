@@ -87,6 +87,7 @@ body {
     background-size: cover;
     background-position: center center;
     filter: brightness(60%);
+
 }
 
 .hero-content {
@@ -114,7 +115,7 @@ body {
 
 .hero-title {
     font-family: 'IM Fell English SC', serif;
-    font-size: 50px;
+    font-size: 75px;
     margin-bottom: 0px;
 }
 
@@ -150,7 +151,8 @@ header {
 
 .about {
     margin-top: 0px;
-    padding: 0;
+    padding: 1.5em;
+   
     
 }
 
@@ -294,7 +296,7 @@ footer {
     margin-top: 0px;
     margin-bottom: 0px;
     display: flex;
-    justify-content: center;
+    justify-content: column;
     padding: 1.5em;
     font-size: 14px;
     font-family: 'IM Fell English SC' ;
@@ -302,10 +304,17 @@ footer {
 }
 
 .signup {
-    display: flex;
+    
+    display: table-row;
+    flex-direction: column;
+    justify-content: center;
    
     font-family: 'IM Fell English SC';
 }
+
+
+
+
 
 .one {
     display: flex;
@@ -318,6 +327,7 @@ footer {
     display: flex;
     float: left;
     width: 50%;
+    text-align: center;
 
 }
 
@@ -339,6 +349,7 @@ footer {
 .footer .footer-content .footer-section {
     border: 1px solid white;
     flex: 1;
+    padding: 25px;
 }
 
 
@@ -354,6 +365,35 @@ footer {
     padding-top: 20px;
 
 }
+
+.footer-section-hours {
+    display: flex;
+    justify-content: center;
+    flex-direction: right;
+
+}
+
+.hours {
+    display: inline;
+}
+
+.one{
+    display: inline-block;
+    text-align: center;
+}
+.h3 > img{
+    display: block;
+}
+
+.two {
+    display: inline-block;
+    text-align: center;
+}
+
+.h3 > table {
+    display: block;
+}
+
 
 
 
@@ -377,6 +417,8 @@ footer {
     .aboutus {
         font-size: 16px;
     }
+
+    
 
 
 }
@@ -414,4 +456,13 @@ footer {
     .navbar-links.active {
         display: flex;
     }
+
+    .container2 {
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+
+    
 }
