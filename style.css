@@ -65,40 +65,7 @@ body {
 
 }
 
-@media (max-width: 600px) {
-    .toggle-button {
-        display: flex;
-    }
 
-    .navbar-links {
-       display: none;
-        width: 100%;
-    }
-
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .navbar-links ul {
-        width: 100%;
-        flex-direction: column;
-
-        
-    }
-
-    .navbar-links li {
-        text-align: center;
-    }
-
-    .navbar-links li a {
-        padding: .5rem 1rem;
-    }
-    
-    .navbar-links.active {
-        display: flex;
-    }
-}
 
 
 
@@ -183,6 +150,8 @@ header {
 
 .about {
     margin-top: 0px;
+    padding: 0;
+    
 }
 
 
@@ -263,26 +232,7 @@ header {
     line-height: 1.6;
 }
 
-@media screen and (min-width: 992px) {
-    .menu {
-        font-size: 16px;
-    }
 
-    .menu-group {
-        grid-template-columns: repeat(2, 1fr); /*fr sets colum size to fraction of page*/
-    }
-
-    .menu-item-image {
-        width: 125px;
-        height: 125px; /*larger menu pics for desktop*/
-    }
-
-    .aboutus {
-        font-size: 16px;
-    }
-
-
-}
 
 .img-col {
     max-width: 100%;
@@ -338,4 +288,121 @@ footer {
     
 }
 
+.cntctus {
+    background-color: darkred;
+    background-repeat: none;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    padding: 1.5em;
+    font-size: 14px;
+    font-family: 'IM Fell English SC' ;
+    color: beige;
+}
 
+.signup {
+    display: flex;
+   
+    font-family: 'IM Fell English SC';
+}
+
+.one {
+    display: flex;
+    float: left;
+    width: 50%;
+}
+
+.two {
+
+    display: flex;
+    float: left;
+    width: 50%;
+
+}
+
+.footer {
+    background: darkred;
+    color: beige;
+    height: 400px;
+    position: relative;
+
+}
+
+.footer-content {
+    
+}
+
+.footer .footer-bottom {
+    background: rgb(100, 6, 6);
+    color: dimgrey;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 20px;
+
+}
+
+
+
+
+/*MEDIA QUERIES*/
+
+@media screen and (min-width: 992px) {
+    .menu {
+        font-size: 16px;
+    }
+
+    .menu-group {
+        grid-template-columns: repeat(2, 1fr); /*fr sets colum size to fraction of page*/
+    }
+
+    .menu-item-image {
+        width: 125px;
+        height: 125px; /*larger menu pics for desktop*/
+    }
+
+    .aboutus {
+        font-size: 16px;
+    }
+
+
+}
+
+@media (max-width: 600px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+       display: none;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+
+        
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+
+    .navbar-links li a {
+        padding: .5rem 1rem;
+    }
+    
+    .navbar-links.active {
+        display: flex;
+    }
+}
