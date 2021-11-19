@@ -1,21 +1,17 @@
-function validateEmail(email) {
-    const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return re.test(email);
-  }
-  
-  function validate() {
-    const $result = $("#result");
-    const email = $("#email").val();
-    $result.text("");
-  
-    if (validateEmail(email)) {
-      $result.text(email + " is valid :)");
-      $result.css("color", "green");
-    } else {
-      $result.text(email + " is not valid :(");
-      $result.css("color", "red");
+function ValidateEmail(InputText)
+{
+    var mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    if(InputText.value.match(mailFormat))
+    {
+        alert("You have entered a valid email");
+        document.form1.text1.focus();
+        return true;
+        
     }
-    return false;
-  }
-  
-  $("#email").on("input", validate);
+    else{
+        alert("You have entered an invalid email");
+        document.form1.text1.focus();
+        return false;
+    }
+
+}

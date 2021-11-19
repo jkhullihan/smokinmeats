@@ -33,7 +33,7 @@
                 
          </nav>
     </header>
-    <body>
+    <body onload='document.form1.focus()'>
         <section class="hero">
 
             <div class="hero-content">
@@ -360,14 +360,11 @@
                     
                     </div>
                     
-                    <form>
-                        <label for="fname">First name:</label><br>
-                        <input type="text" id="fname" name="fname"><br>
-                        <label for="lname">Last name:</label><br>
-                        <input type="text" id="lname" name="lname"><br>
+                    <form name="form1" action="#">
+                        
                         <label for="email">Email</label><br>
-                        <input type="text" id="email" name="email"><br>
-                        <input type="submit" id="submit" name="Sign Up"> <br>
+                        <input type="text" id="text1" name="email"><br>
+                        <input type="submit" id="submit" name="Sign Up" value="Sign Up" onclick="ValidateEmail"> <br>
                         <h2 id="result"></h2>
                     </form>
                 </div>
